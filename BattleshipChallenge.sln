@@ -9,6 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BattleshipChallenge.Console
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{987BA04F-320B-4A52-B49D-A896B3341DA7}"
 	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
 		UML Class Diagram.jpg = UML Class Diagram.jpg
 		UML Class Diagram.vsdx = UML Class Diagram.vsdx
 	EndProjectSection
