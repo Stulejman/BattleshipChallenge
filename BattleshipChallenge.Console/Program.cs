@@ -38,6 +38,13 @@ while (game.InProgress)
     }
 }
 
+Console.WriteLine(string.Empty);
+Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+Console.WriteLine($"----------------You Won!-------------------");
+Console.WriteLine($"----------------Game Over------------------");
+Console.WriteLine("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+Console.ReadKey();
+
 void InvalidArgumentConsoleMessage()
 {
 	Console.WriteLine("Invalid input... Press any key to retry.");
