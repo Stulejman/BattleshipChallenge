@@ -15,8 +15,8 @@ Battleships are written in .NET 6. It is a console application. To run the game 
 ## Modes
 
 There are two modes of the game depending on build configuration:
-> **Debug** - this mode will disclose a whole board for you, so you wont have to struggle with finding proper location of the ship to attack.
-> **Release** - the board is covered with a **fog of war**. You will uncover each cell with each shot.
+**Debug** - this mode will disclose a whole board for you, so you wont have to struggle with finding proper location of the ship to attack.
+**Release** - the board is covered with a **fog of war**. You will uncover each cell with each shot.
 
 ## Implementation
 
