@@ -47,6 +47,7 @@ namespace BattleshipChallenge.Model
 
         public AttackOutcome Hit()
         {
+            if(IsHit && HasShip) return AttackOutcome.Miss;
             IsHit = true;
             if (Ship != null)
             {
