@@ -13,7 +13,7 @@ namespace BattleshipChallenge.Model.Abstract
             Size = size;
         }
 
-        public void GetHit()
+        public void ReceiveDamage()
         {
             HitCount++;
         }

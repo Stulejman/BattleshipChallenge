@@ -9,17 +9,17 @@ namespace BattleshipChallenge.Model
             Console.Clear();
             char CurrentRow = 'A';
             Console.Write(" ");
-            for (int i = 1; i <= board.XSize; i++)
+            for (int i = 1; i <= board.xSize; i++)
             {
                 Console.Write("|" + i);
             }
 
             Console.WriteLine();
-            for (int y = 0; y < board.YSize; y++)
+            for (int y = 0; y < board.ySize; y++)
             {
 
                 Console.Write(CurrentRow + "|");
-                for (int x = 0; x < board.XSize; x++)
+                for (int x = 0; x < board.xSize; x++)
                 {
                     Cell currentCell = board.Cells.Where(c => c.XCoordinate == x && c.YCoordinate == y).First();
                     char currentCellLabel;

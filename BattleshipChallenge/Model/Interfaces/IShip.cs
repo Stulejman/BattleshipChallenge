@@ -3,6 +3,6 @@
     internal interface IShip
     {
         public bool IsSinking { get;}
-        public void GetHit();
+        public void ReceiveDamage();
     }
 }

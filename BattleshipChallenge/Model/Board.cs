@@ -8,22 +8,22 @@ namespace BattleshipChallenge.Model
     {
         public List<Cell> Cells { get; init; }
 
-        public ushort XSize { get; init; }
-        public ushort YSize { get; init; }
+        public ushort xSize { get; init; }
+        public ushort ySize { get; init; }
 
         public Board(ushort xSize, ushort ySize)
         {
-            XSize = xSize;
-            YSize = ySize;
+            this.xSize = xSize;
+            this.ySize = ySize;
             Cells = new List<Cell>();
         }
 
         public AttackOutcome Attack(string cellName)
         {
-            var cellToAttack = Cells.Where(x => x.CellName == cellName).FirstOrDefault();
+            var cellToAttack = Cells.Where(x => x.Identifier == cellName).FirstOrDefault();
             if (cellToAttack != null)
             {
-                return cellToAttack.GetHit();
+                return cellToAttack.Hit();
             }
             else
             {

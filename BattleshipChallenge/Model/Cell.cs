@@ -6,14 +6,14 @@ namespace BattleshipChallenge.Model
 {
     public class Cell : ICell
     {
-        private string? cellName;
-        public string CellName
+        private string? identifier;
+        public string Identifier
         {
             get
             {
-                if (!string.IsNullOrEmpty(cellName)) return cellName;
-                cellName = $"{CharNumber[YCoordinate + 1]}{XCoordinate + 1}";
-                return cellName;
+                if (!string.IsNullOrEmpty(identifier)) return identifier;
+                identifier = $"{CharNumber[YCoordinate + 1]}{XCoordinate + 1}";
+                return identifier;
             }
         }
         public bool IsHit { get; set; }
@@ -45,12 +45,12 @@ namespace BattleshipChallenge.Model
             Ship = ship;
         }
 
-        public AttackOutcome GetHit()
+        public AttackOutcome Hit()
         {
             IsHit = true;
             if (Ship != null)
             {
-                Ship.GetHit();
+                Ship.ReceiveDamage();
                 if (Ship.IsSinking) return AttackOutcome.Sink;
                 return AttackOutcome.Hit;
             }

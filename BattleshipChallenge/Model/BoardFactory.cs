@@ -8,6 +8,7 @@ namespace BattleshipChallenge.Model
     {
         private const ushort XSize = 10, YSize = 10;
         readonly List<Ship> ships = new() { new Destroyer(), new Destroyer(), new Battleship() };
+
         public IBoard CreateBoard()
         {
             List<Cell> cells = new();
@@ -53,7 +54,7 @@ namespace BattleshipChallenge.Model
                     }
 
                     //if proposed cells collection size equals ship size we can place ship,
-                    //otherwise we`ve picked up cells that already has a ship, and we need to repeat
+                    //otherwise we`ve picked up cell range that already has a ship, and we need to repeat the random process
                     if (proposedCells.Count == ship.Size)
                     {
                         foreach (var cell in proposedCells)
