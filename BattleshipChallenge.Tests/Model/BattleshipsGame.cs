@@ -1,13 +1,7 @@
 ﻿using BattleshipChallenge.Model.Interfaces;
 using BattleshipChallenge.Model;
 using Moq;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using BattleshipChallenge.Model.Enums;
-using BattleshipChallenge.Model.Exceptions;
 
 namespace BattleshipChallenge.Tests.Model
 {

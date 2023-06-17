@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using BattleshipChallenge.Model.Ships;
+﻿using BattleshipChallenge.Model.Ships;
 
 namespace BattleshipChallenge.Tests.Model.Ships
 {

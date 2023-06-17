@@ -1,10 +1,4 @@
 ﻿using BattleshipChallenge.Model.Abstract;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Numerics;
-using System.Text;
-using System.Threading.Tasks;
 using BattleshipChallenge.Model;
 using BattleshipChallenge.Model.Exceptions;
 using BattleshipChallenge.Model.Enums;

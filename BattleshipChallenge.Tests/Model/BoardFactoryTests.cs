@@ -1,11 +1,6 @@
 ﻿using BattleshipChallenge.Model;
 using BattleshipChallenge.Model.Interfaces;
 using BattleshipChallenge.Model.Ships;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BattleshipChallenge.Tests.Model
 {
