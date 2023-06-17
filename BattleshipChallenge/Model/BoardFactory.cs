@@ -12,9 +12,9 @@ namespace BattleshipChallenge.Model
         public IBoard CreateBoard()
         {
             List<Cell> cells = new();
-            for (ushort x = 0; x <= XSize; x++)
+            for (ushort x = 0; x < XSize; x++)
             {
-                for (ushort y = 0; y <= YSize; y++)
+                for (ushort y = 0; y < YSize; y++)
                 {
                     cells.Add(new Cell(x, y));
                 }
